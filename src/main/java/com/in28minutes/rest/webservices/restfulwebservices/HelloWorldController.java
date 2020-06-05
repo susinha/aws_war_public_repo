@@ -20,27 +20,27 @@ public class HelloWorldController {
 		InetAddress ip=InetAddress.getLocalHost();
 		System.out.println(String.format("IP is %s", ip));
 		String ipAddr=String.format("IP is %s", ip);
-		return new HelloWorldBean("Hello World - Bean11",ipAddr);
+		return new HelloWorldBean("Hello World - Bean111",ipAddr);
 	}
 	@GetMapping(path = "/hello-world-bean2")
 	public HelloWorldBean helloWorldBean2() throws UnknownHostException {
 		InetAddress ip=InetAddress.getLocalHost();
 		System.out.println(String.format("IP is %s", ip));
 		String ipAddr=String.format("IP is %s", ip);
-		return new HelloWorldBean("Hello World - Bean22",ipAddr);
+		return new HelloWorldBean("Hello World - Bean222",ipAddr);
 	}
 	@GetMapping(path = "/hello-world-bean3")
 	public HelloWorldBean helloWorldBean3() throws UnknownHostException {
 		InetAddress ip=InetAddress.getLocalHost();
 		System.out.println(String.format("IP is %s", ip));
 		String ipAddr=String.format("IP is %s", ip);
-		return new HelloWorldBean("Hello World - Bean33",ipAddr);
+		return new HelloWorldBean("Hello World - Bean333",ipAddr);
 	}
 	@GetMapping(path = "/hello-world-bean4")
 	public HelloWorldBean helloWorldBean4() throws UnknownHostException {
 		InetAddress ip=InetAddress.getLocalHost();
 		System.out.println(String.format("IP is %s", ip));
 		String ipAddr=String.format("IP is %s", ip);
-		return new HelloWorldBean("Hello World - Bean44",ipAddr);
+		return new HelloWorldBean("Hello World - Bean444",ipAddr);
 	}	
 }
