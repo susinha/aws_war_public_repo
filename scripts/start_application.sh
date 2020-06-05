@@ -1,5 +1,5 @@
 #! /bin/bash
 
-sudo su
 cd /opt/tomcat/bin
-./startup.sh
+echo starting....
+sudo ./startup.sh

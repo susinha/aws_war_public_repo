@@ -1,7 +1,7 @@
 #! /bin/bash
 
-sudo su
 cd /opt/tomcat/webapps
-rm -rf <WAR_FILE_NAME>
-rm -rf <CONTEXT_ROOT>
+sudo rm -rf awsHelloWorld.war
+sudo rm -rf awsHelloWorld
+
 

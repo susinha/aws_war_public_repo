@@ -1,15 +1,18 @@
 version: 0.0
 os: linux
 files:
-  - source: /target/SampleMavenTomcatApp.war
-    destination: /tmp/codedeploy-deployment-staging-area/
+  - source: /awsHelloWorld.war
+    destination: /opt/tomcat/webapps/
 hooks:
   ApplicationStop:
-    - location: scripts/stop_application
+    - location: ./stop_application.sh
       timeout: 300
+      runas: root
   BeforeInstall:
-    - location: scripts/uninstall_application
+    - location: ./uninstall_application.sh
       timeout: 300
+      runas: root
   ApplicationStart:
-    - location: scripts/start_application
+    - location: ./start_application.sh
       timeout: 300
+      runas: root

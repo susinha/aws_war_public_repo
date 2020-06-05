@@ -1,5 +1,4 @@
 #! /bin/bash
 
-sudo su
 cd /opt/tomcat/bin
-./shutdown.sh
+sudo ./shutdown.sh
