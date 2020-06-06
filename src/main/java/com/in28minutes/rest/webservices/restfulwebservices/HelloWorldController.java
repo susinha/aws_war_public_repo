@@ -20,7 +20,7 @@ public class HelloWorldController {
 		InetAddress ip=InetAddress.getLocalHost();
 		System.out.println(String.format("IP is %s", ip));
 		String ipAddr=String.format("IP is %s", ip);
-		return new HelloWorldBean("Hello World - Bean111",ipAddr);
+		return new HelloWorldBean("Hello World - Bean",ipAddr);
 	}
 	@GetMapping(path = "/hello-world-bean2")
 	public HelloWorldBean helloWorldBean2() throws UnknownHostException {
