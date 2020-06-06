@@ -1,18 +1,18 @@
 version: 0.0
 os: linux
 files:
-  - source: /awsHelloWorld.war
+  - source: /target/awsHelloWorld.war
     destination: /opt/tomcat/webapps/
 hooks:
   ApplicationStop:
-    - location: ./stop_application.sh
+    - location: scripts/stop_application.sh
       timeout: 300
       runas: root
   BeforeInstall:
-    - location: ./uninstall_application.sh
+    - location: scripts/uninstall_application.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: ./start_application.sh
+    - location: scripts/start_application.sh
       timeout: 300
       runas: root

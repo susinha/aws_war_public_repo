@@ -6,6 +6,6 @@ phases:
        - mvn clean package
 artifacts:
   files:
-    - '**/target/*.zip'
+    - '**/target/*.war'
     - '**/appspec.yml'
     - '**/scripts/*.sh'
