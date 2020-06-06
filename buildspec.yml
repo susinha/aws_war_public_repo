@@ -7,3 +7,5 @@ phases:
 artifacts:
   files:
     - '**/target/*.zip'
+    - '**/appspec.yml'
+    - '**/scripts/*.sh'
